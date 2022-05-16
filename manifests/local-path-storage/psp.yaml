@@ -20,7 +20,13 @@ spec:
     - downwardAPI
     - hostPath
   allowedHostPaths:
-    - pathPrefix: /opt/local-path-provisioner
+    - pathPrefix: /opt/local-path-1
+      readOnly: false
+    - pathPrefix: /opt/local-path-2
+      readOnly: false
+    - pathPrefix: /opt/local-path-3
+      readOnly: false
+    - pathPrefix: /opt/local-path-4
       readOnly: false
   hostNetwork: false
   hostIPC: false
